@@ -94,11 +94,11 @@ if __name__ == ('__main__'):
                 # Concat the number of suspicious comments.
                 string = string + 'Comments on profile page that mention cheats, hacks or scripts: ' + str(len(callouts)) + ', '
 
-                # Concat any VAC ban on record or print that none were found.
-                if len(VAC_ban) > 0:
-                    string = string + str(VAC_ban[0])
-                else:
-                    string = string + 'No VAC ban on record.'
+            # Concat any VAC ban on record or print that none were found.
+            if len(VAC_ban) > 0:
+                string = string + str(VAC_ban[0])
+            else:
+                string = string + 'No VAC ban on record.'
 
             print(string)
             pyperclip.copy(string)
